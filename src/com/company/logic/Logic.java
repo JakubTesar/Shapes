@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class Logic {
     ArrayList<Shape> listShapes = new ArrayList<>();
 
-    public void logic (){
-        ArrayList<String> listData = Data.reading();
+    public void loadShapes  (){
+        ArrayList<String> listData = Data.readingInputShapes();
 
         for (int i = 0; i < listData.size(); i++) {
             String splitArr[] = listData.get(i).split(" ");
@@ -25,7 +25,7 @@ public class Logic {
         }
     }
 
-   public float perimeter() {
+   public float getAvergaePerimeter() {
        int count = 0;
        int suma = 0;
        for (Shape shape : listShapes) {
@@ -35,7 +35,7 @@ public class Logic {
        return (float) suma / count;
    }
 
-    public float content() {
+    public float getAvergaeArea() {
         int count = 0;
         int suma = 0;
         for (Shape shape : listShapes) {

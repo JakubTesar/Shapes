@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Data {
 
-    public static ArrayList<String> reading() {
+    public static ArrayList<String> readingInputShapes() {
         ArrayList<String > list = new ArrayList<>();
         try {
             BufferedReader br = new BufferedReader(new FileReader("input.txt"));

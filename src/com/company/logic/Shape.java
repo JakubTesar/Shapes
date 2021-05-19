@@ -16,11 +16,11 @@ public class Shape {
     }
 
     public float calculateContent() {
-        return 0;
+        return -1;
     }
 
     public float calculatePerimeter() {
-        return 0;
+        return -1;
     }
 
     public int getA() {
